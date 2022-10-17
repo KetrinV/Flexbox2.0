@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(214, 214, 214);
+}
+.card{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width:200px;
+    height: 320px;
+    display:block;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+    max-width: 1200px;
+    min-width: 320px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    border-radius: 3%;
+}
+@media (min-width: 36em) {
+    .card {
+        flex: 0 0 calc(50% - 1.25rem / 2);
+        margin-left: 1.25rem;
+    }
+
+    .card:nth-child(odd) {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 60em) {
+    .card {
+        flex: 0 0 calc(100% / 3 - 0.875rem);
+    }
+
+    .card:nth-child(odd),
+    card:nth-child(even) {
+        margin-left: 1.25rem;
+    }
+
+    .card:nth-child(3n + 1) {
+        margin-left: 0;
+    }
+}
